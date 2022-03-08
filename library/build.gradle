@@ -49,7 +49,7 @@ afterEvaluate {
                 artifactId = 'library'
                 version = 1.0
 
-                artifact("/build/intermediates/aar_main_jar/release/classes.jar")
+                artifact("../AnalyticsCollector/datacollector.jar")
 
                 pom.withXml {
                     def dependenciesNode = asNode().appendNode('dependencies')
